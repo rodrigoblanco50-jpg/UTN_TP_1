@@ -22,6 +22,10 @@
     font-family: var(--primaryfont-family);
 }
 
+.body{
+    background-color: var(--bodybackground-color);
+}
+
 .header-desktop{
     display: flex;
     position: sticky;
@@ -31,6 +35,7 @@
     height: 83px;
     background-color: #fff;
     border-bottom: 1px solid #e7eaed;
+    z-index: 1000;
 }
 
 .toolbar{
@@ -402,6 +407,147 @@
     width: 100%;
 }
 .buton-banner_buton{
+    width: 100%;
+}
+}
+
+.pay-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1022px;
+    margin: 0 auto;
+}
+
+.pay-section-divseparator{
+    height: 48px;
+}
+
+.pay-section-header{
+    width: 100%;
+}
+
+.pay-section-header_title{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 8px 0px;
+    color: #2B2B2B;
+    text-align: center;
+}
+
+.pay-card-firstcomponent{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 24px;
+}
+
+.pay-card{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 24px;
+}
+
+.pay-card-content{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: flex-end;
+gap: 21px;
+width: 50%;
+padding: 50px 20px;
+}
+
+.pay-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 21px;
+}
+
+.pay-card-text_title{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #2B2B2B;
+}
+
+.pay-card-text_lorem{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #2B2B2B;
+}
+
+.pay-card-content-span{
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+
+.pay-card-sizebox-span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: end;
+    color: #360C72;
+    font-weight: bold;
+    padding: 14px 0px;
+}
+
+.pay-card-content_span{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pay-card-content-span:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: #652bdf;
+}
+
+.pay-card-icon-span{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.pay-card-image-content{
+    width: 50%;
+    padding: 21px 18px;
+}
+
+.pay-card-image-content_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px){
+    .pay-card-firstcomponent{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 1022px;
+        margin: 0 auto;
+        overflow: hidden;
+        gap: 24px;
+    }
+    .pay-card{
+        display: flex;
+        flex-direction: column;
+        max-width: 1022px;
+        margin: 0 auto;
+        overflow: hidden;
+        gap: 24px;
+    }
+    .pay-card-content{
+        width: 100%;
+    }
+.pay-card-image-content{
     width: 100%;
 }
 }
